@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="encabezado_titulo">
+            <h1>TRIVIA QUIZ</h1>
+        </div>
+        <div class="encabezado_aleatorios">
+            <div class="numeroA">
+                <button type="button" onclick=numeroAleatorio()>Pregunta</button>
+                <p id="parrafo_num"></p>
+            </div>
+            <br>
+            <div class="nombreA">
+                <button type="button" onclick=nombreAleatorio()>Nombre</button>
+                <p id="parrafo_nom"></p>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <div id="container_botones">
+            <div id="container_botones_grilla">
+                <button type="button" id="button1" onclick=desplegarOpcion(1)>1</button>
+                <button type="button" id="button2" onclick=desplegarOpcion(2)>2</button>
+                <button type="button" id="button3" onclick=desplegarOpcion(3)>3</button>
+                <button type="button" id="button4" onclick=desplegarOpcion(4)>4</button>
+                <button type="button" id="button5" onclick=desplegarOpcion(5)>5</button>
+                <button type="button" id="button6" onclick=desplegarOpcion(6)>6</button>
+                <button type="button" id="button7" onclick=desplegarOpcion(7)>7</button>
+                <button type="button" id="button8" onclick=desplegarOpcion(8)>8</button>
+                <button type="button" id="button9" onclick=desplegarOpcion(9)>9</button>
+                <button type="button" id="button10" onclick=desplegarOpcion(10)>10</button>
+                <button type="button" id="button11" onclick=desplegarOpcion(11)>11</button>
+                <button type="button" id="button12" onclick=desplegarOpcion(12)>12</button>
+                <button type="button" id="button13" onclick=desplegarOpcion(13)>13</button>
+                <button type="button" id="button14" onclick=desplegarOpcion(14)>14</button>
+                <button type="button" id="button15" onclick=desplegarOpcion(15)>15</button>
+                <button type="button" id="button16" onclick=desplegarOpcion(16)>16</button>
+                <button type="button" id="button17" onclick=desplegarOpcion(17)>17</button>
+                <button type="button" id="button18" onclick=desplegarOpcion(18)>18</button>
+                <button type="button" id="button19" onclick=desplegarOpcion(19)>19</button>
+                <button type="button" id="button20" onclick=desplegarOpcion(20)>20</button>
+                <button type="button" id="button21" onclick=desplegarOpcion(21)>21</button>
+                <button type="button" id="button22" onclick=desplegarOpcion(22)>22</button>
+                <button type="button" id="button23" onclick=desplegarOpcion(23)>23</button>
+                <button type="button" id="button24" onclick=desplegarOpcion(24)>24</button>
+                <button type="button" id="button25" onclick=desplegarOpcion(25)>25</button>
+                <button type="button" id="button26" onclick=desplegarOpcion(26)>26</button>
+                <button type="button" id="button27" onclick=desplegarOpcion(27)>27</button>
+                <button type="button" id="button28" onclick=desplegarOpcion(28)>28</button>
+                <button type="button" id="button29" onclick=desplegarOpcion(29)>29</button>
+                <button type="button" id="button30" onclick=desplegarOpcion(30)>30</button>
+                <button type="button" id="button31" onclick=desplegarOpcion(31)>31</button>
+                <button type="button" id="button32" onclick=desplegarOpcion(32)>32</button>
+                <button type="button" id="button33" onclick=desplegarOpcion(33)>33</button>
+                <button type="button" id="button34" onclick=desplegarOpcion(34)>34</button>
+                <button type="button" id="button35" onclick=desplegarOpcion(35)>35</button>
+                <button type="button" id="button36" onclick=desplegarOpcion(36)>36</button>
+            </div>
+        </div>
+
+        <div id="container_preguntas">
+            <div id="container_preguntas_grilla">
+                <div id="pregunta1" class="pregunta">¿Cuál es tu mayor manía?</div>
+                <div id="pregunta2" class="pregunta">¿Qué es lo primero que te fijas en una persona? ¿Por qué?</div>
+                <div id="pregunta3" class="pregunta">COMODÍN - Elige un compañero/a y un número de pregunta para él.</div>
+                <div id="pregunta4" class="pregunta">¿Cuál es tu mayor reto actualmente?</div>
+                <div id="pregunta5" class="pregunta">¿Tenés alguna creencia random?</div>
+                <div id="pregunta6" class="pregunta">¿Tenes un canal de tv/Youtube o cuenta de Instagram favorito?</div>
+                <div id="pregunta7" class="pregunta">¿Estás enamorado/a de alguien en este momento?</div>
+                <div id="pregunta8" class="pregunta">¿Cuál es tu mayor habilidad?</div>
+                <div id="pregunta9" class="pregunta">¿Algo de lo que estés orgulloso/a?</div>
+                <div id="pregunta10" class="pregunta">¿Cuál es tu libro favorito?</div>
+                <div id="pregunta11" class="pregunta">¿Hay algo que te de verguenza?</div>
+                <div id="pregunta12" class="pregunta">¿Qué es lo primero que haces luego de la jornada laboral?</div>
+                <div id="pregunta13" class="pregunta">¿Cuál es tu recuerdo más feliz de la infancia?</div>
+                <div id="pregunta14" class="pregunta">¿Tenes una persona favorita? ¿Quién es?</div>
+                <div id="pregunta15" class="pregunta">¿Qué estación del año elegirías para vivir eternamente?</div>
+                <div id="pregunta16" class="pregunta">¿Cuál es tu película favorita?</div>
+                <div id="pregunta17" class="pregunta">¿Cuál es tu recuerdo más feliz de la adolescencia?</div>
+                <div id="pregunta18" class="pregunta">¿Qué gusto de helado no pedirías NUNCA?</div>
+                <div id="pregunta19" class="pregunta">¿Qué cosa dirías que te caracteriza o sería muy tuya?</div>
+                <div id="pregunta20" class="pregunta">¿Qué es lo que más te agrada de la persona a tu derecha?</div>
+                <div id="pregunta21" class="pregunta">¿Qué es lo más raro que sabes hacer?</div>
+                <div id="pregunta22" class="pregunta">Contanos la historia de tu vida en cinco minutos</div>
+                <div id="pregunta23" class="pregunta">¿Cuáles son tus tres bandas de música favoritas?</div>
+                <div id="pregunta24" class="pregunta">¿Qué habilidad te gustaría perfeccionar para llegar a dominar totalmente?</div>
+                <div id="pregunta25" class="pregunta">¿Qué es lo que la mayoría de la gente suele pensar de ti y no es cierto?</div>
+                <div id="pregunta26" class="pregunta">¿Cuándo te diste cuenta de que habías entrado en la adultez?</div>
+                <div id="pregunta27" class="pregunta">¿Sos supersticioso/a?</div>
+                <div id="pregunta28" class="pregunta">¿Cuál es tu rasgo de personalidad del cual te sientes más orgulloso/a?</div>
+                <div id="pregunta29" class="pregunta">¿Qué es lo que más te gusta de participar de este proyecto?</div>
+                <div id="pregunta30" class="pregunta">Si solo pudieras comer una comida por el resto de tu vida ¿Cuál sería?</div>
+                <div id="pregunta31" class="pregunta">¿Tuviste o tenes un apodo? ¿Cuál es? ¿Cómo surgió?</div>
+                <div id="pregunta32" class="pregunta">¿Te gusta festejar tu cumpleaños? ¿Por qué?</div>
+                <div id="pregunta33" class="pregunta">¿Te gustan las redes sociales? Si la respuesta es si ¿Cuál es tu favorita?</div>
+                <div id="pregunta34" class="pregunta">Si pudieras repetir un momento de tu vida ¿Cuál sería?</div>
+                <div id="pregunta35" class="pregunta">¿Qué es lo que extrañas de tu infancia?</div>
+                <div id="pregunta36" class="pregunta">¿Cómo te sentís con la "nueva normalidad"?</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
